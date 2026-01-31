@@ -6,7 +6,7 @@ const Index = () => {
   return (
     <div 
       className="min-h-screen flex flex-col items-center justify-start"
-      style={{ background: 'hsl(85 20% 35%)' }}
+      style={{ background: 'hsl(93 32% 26%)' }}
     >
       <div className="w-full max-w-sm flex flex-col items-center">
         {/* Doctor Photo with Logo */}
