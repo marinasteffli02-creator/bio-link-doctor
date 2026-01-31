@@ -5,7 +5,7 @@ interface LinkButtonProps {
   children: React.ReactNode;
   icon?: React.ReactNode;
   className?: string;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "nude";
 }
 
 const LinkButton = ({ href, children, icon, className, variant = "primary" }: LinkButtonProps) => {
@@ -18,6 +18,7 @@ const LinkButton = ({ href, children, icon, className, variant = "primary" }: Li
         "group flex items-center justify-center gap-3 w-full py-4 px-6 rounded-xl font-medium transition-all duration-300",
         variant === "primary" && "bg-primary text-primary-foreground shadow-button hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]",
         variant === "secondary" && "bg-card text-card-foreground border border-border shadow-soft hover:bg-secondary hover:scale-[1.02] active:scale-[0.98]",
+        variant === "nude" && "bg-nude text-nude-foreground shadow-soft hover:bg-nude-dark hover:scale-[1.02] active:scale-[0.98]",
         className
       )}
     >

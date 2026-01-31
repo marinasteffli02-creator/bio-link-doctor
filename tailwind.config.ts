@@ -39,6 +39,11 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        nude: {
+          DEFAULT: "hsl(var(--nude))",
+          foreground: "hsl(var(--nude-foreground))",
+          dark: "hsl(var(--nude-dark))",
+        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
