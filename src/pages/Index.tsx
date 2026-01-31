@@ -1,12 +1,13 @@
 import DoctorCard from "@/components/DoctorCard";
 import LinkButton from "@/components/LinkButton";
 import { Calendar, Leaf } from "lucide-react";
+import logoHematoveg from "@/assets/logo-hematoveg.png";
 
 const Index = () => {
   return (
     <div 
-      className="min-h-screen flex flex-col items-center justify-start"
-      style={{ background: 'hsl(93 32% 26%)' }}
+      className="min-h-screen flex flex-col items-center justify-start bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${logoHematoveg})` }}
     >
       <div className="w-full max-w-sm flex flex-col items-center">
         {/* Doctor Photo with Logo */}
