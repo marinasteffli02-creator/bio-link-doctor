@@ -16,7 +16,7 @@ const DoctorCard = () => {
         <div 
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'linear-gradient(to bottom, transparent 50%, hsl(93 32% 26%) 100%)'
+            background: 'linear-gradient(to bottom, transparent 60%, transparent 100%)'
           }}
         />
         
