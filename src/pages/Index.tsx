@@ -46,8 +46,8 @@ const Index = () => {
           
           {/* Footer */}
           <div className="mt-4 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            <p className="text-white/60 text-xs text-center">
-              Hematologia
+            <p className="text-white/70 text-sm text-center font-medium">
+              Dra. Marina Steffli - Hematologista e Vegetariana
             </p>
           </div>
         </div>
