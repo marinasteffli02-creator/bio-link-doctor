@@ -17,10 +17,11 @@ const Index = () => {
         <div className="w-full px-4 py-6 flex flex-col items-center gap-6">
           {/* Tagline */}
           <div 
-            className="text-center animate-fade-in-up px-5 py-4 rounded-2xl backdrop-blur-sm shadow-lg" 
+            className="text-center animate-fade-in-up px-6 py-5 rounded-2xl shadow-xl border border-white/10" 
             style={{ 
               animationDelay: '0.4s',
-              background: 'linear-gradient(135deg, hsla(75, 35%, 35%, 0.95), hsla(85, 30%, 28%, 0.95))'
+              background: 'linear-gradient(145deg, hsla(75, 30%, 32%, 0.95) 0%, hsla(35, 25%, 55%, 0.9) 100%)',
+              boxShadow: '0 8px 32px -8px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1)'
             }}
           >
             <p className="flex items-start justify-center gap-2 text-white/95 text-lg leading-relaxed">
