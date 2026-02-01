@@ -11,11 +11,11 @@ const DoctorCard = () => {
           className="w-full h-auto object-cover"
         />
         
-        {/* Gradient overlay for seamless blend */}
+        {/* Gradient overlay for seamless blend with tagline box */}
         <div 
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'linear-gradient(to bottom, transparent 60%, transparent 100%)'
+            background: 'linear-gradient(to bottom, transparent 50%, hsla(75, 35%, 35%, 0.6) 85%, hsla(75, 35%, 35%, 0.95) 100%)'
           }}
         />
       </div>

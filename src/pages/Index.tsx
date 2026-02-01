@@ -1,13 +1,13 @@
 import DoctorCard from "@/components/DoctorCard";
 import LinkButton from "@/components/LinkButton";
 import { Calendar, Leaf } from "lucide-react";
-import logoHematoveg from "@/assets/logo-hematoveg.png";
+import leavesBackground from "@/assets/leaves-background.png";
 
 const Index = () => {
   return (
     <div 
       className="min-h-screen flex flex-col items-center justify-start bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${logoHematoveg})` }}
+      style={{ backgroundImage: `url(${leavesBackground})` }}
     >
       <div className="w-full max-w-sm flex flex-col items-center">
         {/* Doctor Photo with Logo */}
@@ -17,10 +17,10 @@ const Index = () => {
         <div className="w-full px-4 py-6 flex flex-col items-center gap-6">
           {/* Tagline */}
           <div 
-            className="text-center animate-fade-in-up px-4 py-3 rounded-xl backdrop-blur-sm" 
+            className="text-center animate-fade-in-up px-5 py-4 rounded-2xl backdrop-blur-sm shadow-lg" 
             style={{ 
               animationDelay: '0.4s',
-              background: 'hsla(93, 32%, 20%, 0.85)'
+              background: 'linear-gradient(135deg, hsla(75, 35%, 35%, 0.95), hsla(85, 30%, 28%, 0.95))'
             }}
           >
             <p className="flex items-start justify-center gap-2 text-white/95 text-lg leading-relaxed">
