@@ -1,6 +1,7 @@
 import DoctorCard from "@/components/DoctorCard";
 import LinkButton from "@/components/LinkButton";
 import { Calendar, Leaf, ClipboardCheck, BookOpen, Gift, Stethoscope } from "lucide-react";
+import { cn } from "@/lib/utils";
 import leavesBackground from "@/assets/leaves-background.png";
 
 const Index = () => {
@@ -62,17 +63,6 @@ const Index = () => {
             </div>
           </div>
 
-          {/* ===== SEÇÃO 2 – MICRO-AUTORIDADE ===== */}
-          <div
-            className="w-full px-6 pb-5 animate-fade-in-up"
-            style={{ animationDelay: "0.7s" }}
-          >
-            <p className="text-center text-sm leading-relaxed italic" style={{ color: "hsl(45, 25%, 78%)" }}>
-              Material elaborado por médica hematologista, com foco em saúde do
-              sangue sem abrir mão dos seus valores.
-            </p>
-          </div>
-
           {/* ===== SEÇÃO 3 – O QUE VAI RECEBER ===== */}
           <div
             className="w-full px-4 pb-6 animate-fade-in-up"
@@ -99,12 +89,18 @@ const Index = () => {
                   icon={<BookOpen className="w-4 h-4" />}
                   text="Mini-guia explicativo sobre anemia e falta de ferro"
                 />
-                <BenefitItem
+              <BenefitItem
                   icon={<Gift className="w-4 h-4" />}
                   text="Bônus: Curadoria de produtos veganos e cruelty-free"
+                  bold
                 />
               </div>
             </div>
+
+            <p className="text-center text-sm leading-relaxed italic mt-4 px-2" style={{ color: "hsl(45, 25%, 78%)" }}>
+              Material elaborado por médica hematologista, com foco em saúde do
+              sangue sem abrir mão dos seus valores.
+            </p>
           </div>
 
           {/* ===== SEÇÃO 4 – PORTA LATERAL (CONSULTA) ===== */}
@@ -158,12 +154,13 @@ const Index = () => {
 interface BenefitItemProps {
   icon: React.ReactNode;
   text: string;
+  bold?: boolean;
 }
 
-const BenefitItem = ({ icon, text }: BenefitItemProps) => (
+const BenefitItem = ({ icon, text, bold }: BenefitItemProps) => (
   <div className="flex items-start gap-3">
     <span className="mt-0.5 flex-shrink-0" style={{ color: "hsl(120, 45%, 65%)" }}>{icon}</span>
-    <span className="text-white text-sm leading-snug">{text}</span>
+    <span className={cn("text-white text-sm leading-snug", bold && "font-semibold")}>{text}</span>
   </div>
 );
 
