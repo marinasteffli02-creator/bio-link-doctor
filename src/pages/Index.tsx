@@ -52,7 +52,7 @@ const Index = () => {
               style={{ animationDelay: "0.6s" }}
             >
               <LinkButton
-                href="https://www.doctoralia.com.br/z/UL6TuH"
+                href="https://hematoveg.my.canva.site/"
                 icon={<ClipboardCheck className="w-5 h-5" />}
                 variant="primary"
               >
