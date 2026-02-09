@@ -124,8 +124,8 @@ const Index = () => {
               icon={<Calendar className="w-5 h-5" />}
               variant="nude"
             >
-              <div className="flex flex-col items-center">
-                <span>Agendar consulta online especializada</span>
+              <div className="flex flex-col items-center text-center">
+                <span className="font-bold uppercase">Agendar consulta com especialista</span>
                 <span className="text-xs opacity-75 font-normal">
                   Clique aqui para agendar
                 </span>
